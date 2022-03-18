@@ -1,0 +1,11 @@
+<p>Exercicio 1 ngSwitch</p>
+
+<input type="text" [(ngModel)] = "canal">
+
+<div [ngSwitch]="canal">
+  <a target = _blank href="https://support.discord.com/hc/en-us/community/posts/360056326912-Login" *ngSwitchCase="'discord'">discord</a>
+  <a target = _blank href="https://www.youtube.com/" *ngSwitchCase="'youtube'">youtube</a>
+  <a target = _blank href="https://www.youtube.com/watch?v=uMjvpoeKp70" *ngSwitchCase="'loiane'">canal da loiane</a>
+  <p *ngSwitchDefault>canal não encontrado</p>
+</div>
+

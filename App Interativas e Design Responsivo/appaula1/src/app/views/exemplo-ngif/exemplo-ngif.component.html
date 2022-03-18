@@ -1,0 +1,11 @@
+<h3>Exemplo de *ngIf</h3>
+
+<input [(ngModel)] = "nome" placeholder="Nome">
+<input [(ngModel)] = "sobrenome" placeholder="Sobrenome">
+
+<!--nome != ''-->
+<div *ngIf="nome && sobrenome">
+  Nome: {{nome}}
+  Sobrenome : {{sobrenome}}
+</div>
+

@@ -1,0 +1,40 @@
+
+bindings
+- 2 tipos: via unica e dupla
+- ligação = ts ---> html
+- da onde ta o valor pra onde vai ser resolvido(via única), a pra fazer com com texto simples
+
+tipos de binding
+- interpolação(faz contas, exp, chama função)(unidirecional)(por em "qualquer" lugar)
+{{interpolação}}
+
+property binding
+
+- qualquer atributo html
+<p[class] = styleClass> </p>
+
+binding events
+-
+
+
+
+
+
+
+----------------------------------------------------------
+
+ng new aula03--
+ng serve --open
+*novo terminal*
+ng g c views/interpolation
+
+app component(é a aplicação em si)
+ts - seletor 
+html do componente
+
+
+ts do componente
+appcomponent - add a tag
+html, css do componente
+tsdo componente se quiser criar função ou variaveis 
+-------------------------------------------------------

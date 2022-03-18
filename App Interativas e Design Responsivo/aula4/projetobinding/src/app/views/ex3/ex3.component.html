@@ -1,0 +1,13 @@
+<input type="text" placeholder="nome"[(ngModel)]="nome">
+
+
+<select [(ngModel)]="curso">
+  <option value="tsi">Sistema para internet</option>
+  <option value="medicina">Medina</option>
+  <option value="moda">Moda</option>
+</select>
+
+<p>{{nome + '.' + 'O nome do curso é ' + curso}}</p>
+nome:{{nome}}
+<br>
+curso:{{curso}}

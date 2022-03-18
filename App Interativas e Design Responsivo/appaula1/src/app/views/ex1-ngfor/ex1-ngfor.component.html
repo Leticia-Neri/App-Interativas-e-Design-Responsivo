@@ -1,0 +1,8 @@
+<!--<ul>
+  <li *ngFor="let imagem of vetorImagens">
+  <img src ="assets/{{imagem}}">
+  </li>
+</ul>
+-->
+
+<img *ngFor="let imagem of vetorImagens" [src] = "imagem">

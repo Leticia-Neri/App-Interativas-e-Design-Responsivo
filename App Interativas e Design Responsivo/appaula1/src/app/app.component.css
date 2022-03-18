@@ -1,0 +1,16 @@
+.background-vermelho{
+  background-color: red;
+}
+
+.font{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: blueviolet;
+}
+
+.font_welcome{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: blueviolet;
+}
+

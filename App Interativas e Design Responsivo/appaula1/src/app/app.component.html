@@ -1,0 +1,42 @@
+<!--<app-mensagem></app-mensagem>
+<br>
+<app-date></app-date>
+<app-interpolation></app-interpolation>
+
+<app-nome></app-nome>
+
+<app-exercicio2></app-exercicio2>
+
+<app-exercicio3></app-exercicio3>
+
+<app-exercicio4></app-exercicio4>
+
+<app-event-binding></app-event-binding>
+
+<app-exericio5></app-exericio5>
+
+<app-exemplo-ngif></app-exemplo-ngif>
+<app-ex1-ng-if></app-ex1-ng-if>
+<app-ex2-ng-if></app-ex2-ng-if>
+<app-exemplo-ngfor></app-exemplo-ngfor>
+<app-ex1-ngfor></app-ex1-ngfor>
+<app-ex2-ngfor></app-ex2-ngfor>
+
+<app-exemplo-ngswitch></app-exemplo-ngswitch>
+
+-->
+
+<button (click) = "exercicio='exercicioMensagem'">Exercicio Mensagem</button>
+<button (click) = "exercicio='exercicioData'">Exercicio Data</button>
+<button (click) ="exercicio='exercicioSwitch'">Exercicio ngSwitch</button>
+<button (click) = "exercicio='exercicioFor'">Exercicio ngFor</button>
+<button (click) = "exercicio='exercicioIf'">Exercicio ngIf</button>
+
+
+<div [ngSwitch]="exercicio">
+  <app-mensagem *ngSwitchCase="'exercicioMensagem'"></app-mensagem>
+  <app-date *ngSwitchCase="'exercicioData'"></app-date>
+  <app-exercico1-canal *ngSwitchCase="'exercicioSwitch'"></app-exercico1-canal>
+  <app-ex1-ngfor *ngSwitchCase="'exercicioFor'" ></app-ex1-ngfor>
+  <app-ex2-ng-if *ngSwitchCase="'exercicioIf'" ></app-ex2-ng-if>
+</div>

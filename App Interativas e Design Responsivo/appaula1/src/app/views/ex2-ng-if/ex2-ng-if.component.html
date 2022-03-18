@@ -1,0 +1,18 @@
+<h3>Exericio 2 de *ngIf</h3>
+
+<input [(ngModel)]="valor1" type="number" placeholder="Digite um numero">
+<input [(ngModel)]="valor2" type="number" placeholder="Digite um numero">
+
+<div *ngIf = "valor1 && valor2" >
+
+  <button  (click)="soma()" > + </button>
+  <button (click)="sub()"> - </button>
+  <button (click)="divisao()"> / </button>
+  <button (click)="multiplicacao()"> * </button>
+
+  <div *ngIf="result || result == 0" >
+    {{result}}
+  </div>
+</div>
+
+

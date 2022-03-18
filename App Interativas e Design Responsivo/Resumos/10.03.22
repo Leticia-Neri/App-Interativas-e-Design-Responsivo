@@ -1,0 +1,12 @@
+Diretiva Estruturais
+
+- Modificar o layout do HTML
+- Diretivas = atributos
+- *
+- *ngIf, *ngFor, *ngSwitch
+
+------------------------------------------
+
+-no import : binding de duas vias (ativar ele)
+
+numero:: number;
