@@ -1,0 +1,22 @@
+<h3>Gestor de Filmes</h3>
+
+<ul>
+  <li *ngFor="let movie of movies; let i = index" (click)="selectMovie(movie)">
+    {{movie.name}} - {{movie.rating}}
+    <button (click)="remove(i)">X</button>
+  </li>
+</ul>
+
+<div *ngIf="curMovie">
+  <input placeholder="Name" [(ngModel)]="curMovie.name">
+  <br>
+  <input placeholder="Rating" type="number" [(ngModel)]="curMovie.rating">
+  <button (click)="save()">Save</button>
+  <button (click)="cancel()">Cancel</button>
+</div>
+
+<div>
+  <button (click)="newMovie()">New</button>
+</div>
+
+
