@@ -3,3 +3,19 @@ binding de duas vias
 - radio, checkbox
 
 do codigo pra pagina 
+
+
+
+
+
+
+seviço - dados
+od comp tem acessos a todos os serviços
+
+
+
+aula31/03
+app mode 
+jodo.ts
+
+ng generate service services/jogo
