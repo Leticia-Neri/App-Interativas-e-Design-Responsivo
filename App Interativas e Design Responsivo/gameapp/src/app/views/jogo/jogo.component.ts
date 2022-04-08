@@ -12,6 +12,8 @@ export class JogoComponent implements OnInit {
 
   jogos = new Array<Jogo>();
   jogoAtual?: Jogo;
+  estaEditando = false;
+
   
   constructor(private gameService: JogoService) { }
 
@@ -28,19 +30,35 @@ export class JogoComponent implements OnInit {
 
   novo(){
     this.jogoAtual = new Jogo();
+    this.estaEditando = false;
   }
 
   salvar(){
     if(this.jogoAtual){
-      this.gameService.inserir(this.jogoAtual);
+      if(!this.estaEditando){
+        this.gameService.inserir(this.jogoAtual);
+      }else{
+        this.gameService.editar(this.jogoAtual);
+      }
+      
     }
     //this.jogoAtual = undefined;
     this.cancelar();
+    this.atualizar();
   }
 
   cancelar(){
     this.jogoAtual = undefined;
   }
 
+  remover(id?: number){
+    this.gameService.remover(id);
+    this.atualizar();
+  }
+
+  selecionar(jogo: Jogo){
+    this.jogoAtual = jogo;
+    this.estaEditando = true;
+  }
 
 }
